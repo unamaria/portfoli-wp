@@ -4,7 +4,7 @@
 		<article id="post-<?php the_ID(); ?>">
 			
 			<div class="inner_article">
-				<h2><?php the_title(); ?></h2>
+				<h2 id="post-title"><?php the_title(); ?></h2>
 				
 				<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 				
@@ -20,7 +20,7 @@
 				
 				<?php edit_post_link('Edit this entry','','.'); ?>
 				
-				<?php //comments_template(); ?>
+				<?php comments_template(); ?>
 			</div>
 		</article>
 </main>

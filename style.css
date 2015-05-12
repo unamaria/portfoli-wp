@@ -360,10 +360,10 @@ main h2 {
 /* Article */
 article {
 	background-color: #DDD;
-	padding-top: 3em;
+	padding: 3em 0.5em;
 }
 
-article h2 {
+article #post-title {
 	font-family: Helvetica, Arial, sans-serif;
 	font-style: normal;
 	text-transform: none;
