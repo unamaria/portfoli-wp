@@ -48,11 +48,6 @@
 			<h1>Maria <img src="<?php bloginfo('template_url'); ?>/logo.svg" alt=""> Comas</h1>			
 		</div>
 		<nav>
-	      <ul>
-	        <li><a href="index.html">Portfolio</a></li>
-	        <li><a href="about.html">About</a></li>
-	        <li>Outputs</li>
-	        <li><a href="inputs.html">Inputs</a></li>
-	      </ul>
+	    	<?php wp_nav_menu( array( 'main_nav' ) ); ?>
 	    </nav>
 	</header>
