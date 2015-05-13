@@ -30,7 +30,7 @@
 		   ?>
 	</title>
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
@@ -43,7 +43,7 @@
 
 <body <?php body_class(); ?>>
 
-	<header>
+	<header id="header">
 		<div class="header__logo">		
 			<h1>Maria <img src="<?php bloginfo('template_url'); ?>/logo.svg" alt=""> Comas</h1>			
 		</div>

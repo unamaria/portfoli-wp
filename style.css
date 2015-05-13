@@ -384,3 +384,36 @@ article #post-title {
 	line-height: 1.67;
 	background-color: #fff;
 }
+
+/*
+ *
+ * Footer
+ *
+ */
+footer {
+	background-color: #181818;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer li {
+	display: inline-block;
+}
+
+footer a {
+	text-decoration: none;
+	color: #5E5E5E;
+}
+
+footer small {
+	width: 100%;
+	padding: 1em;
+}
+
+ footer img {
+ 	width: 5em;
+ }
