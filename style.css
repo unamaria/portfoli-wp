@@ -228,9 +228,10 @@ nav li {
 nav li a {
 	text-decoration: none;
 	color: #5E5E5E;
+	padding: .2em;
 }
 
-nav li a:hover {
+nav li a:hover, .current-menu-item a {
 	background-color: #FFEB3B;
 	color: #AFA54D;
 } 
