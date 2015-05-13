@@ -23,7 +23,7 @@ h1 { }
 h2 { }
 h3 { }
 
-p { margin: 0 0 10px 0; }
+/*p { margin: 0 0 10px 0; } */
 a { }
 a:hover { } 
 
@@ -166,6 +166,8 @@ body {
   font-size: 100%;
   color: #5E5E5E;
 }
+
+p { margin: 0 0 1em 0; }
 
 /*
  *
@@ -336,7 +338,16 @@ main h2 {
 }
 
 .post p {
-	font-family: georgia, serif;	
+	font-family: georgia, serif;
+	margin-top: 1em;
+}
+
+.meta {
+	font-size: .8em;
+}
+
+.meta a {
+	color: #5d5d5d;
 }
 
 /* Photos */
@@ -400,6 +411,10 @@ footer {
 	align-items: center;
 }
 
+footer small {
+	font-style: .8em;
+}
+
 footer li {
 	display: inline-block;
 }
@@ -409,8 +424,7 @@ footer a {
 	color: #5E5E5E;
 }
 
-footer small {
-	width: 100%;
+footer>a, footer small {
 	padding: 1em;
 }
 

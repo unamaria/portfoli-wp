@@ -17,15 +17,15 @@
 			
 				<div class="post" id="post-<?php the_ID(); ?>">
 
-					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></h3>
+					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 
-					<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 					<div class="entry">
 
 						<?php the_excerpt(); ?>
 
 					</div>
+					<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
