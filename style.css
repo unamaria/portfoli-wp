@@ -426,6 +426,13 @@ footer small {
 	font-style: .8em;
 }
 
+footer ul {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+}
+
 footer li {
 	display: inline-block;
 }
