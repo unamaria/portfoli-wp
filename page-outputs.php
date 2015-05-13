@@ -26,7 +26,6 @@
 
 					</div>
 
-					<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
 				</div>

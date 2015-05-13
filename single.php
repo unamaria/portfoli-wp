@@ -6,7 +6,6 @@
 			<div class="inner_article">
 				<h2 id="post-title"><?php the_title(); ?></h2>
 				
-				<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 				
 				<div class="entry">
 					
@@ -17,6 +16,7 @@
 					<?php the_tags( 'Tags: ', ', ', ''); ?>
 				
 				</div>
+				<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 				
 				<?php edit_post_link('Edit this entry','','.'); ?>
 				

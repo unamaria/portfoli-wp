@@ -261,6 +261,12 @@ main h2 {
 	width: 100%;
 }
 
+.entry a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 2px solid #00BEA4;
+}
+
 @media (min-width: 700px) and (max-width: 1199px) {
 	.post, .photo-card {
 		width: 40%;
@@ -320,6 +326,7 @@ main h2 {
 	margin: 1em;
 	line-height: 1.5;
 	background-color: #FFF;
+	box-shadow: 0 0 .5em #5E5E5E;
 }
 
 .post h3 {
@@ -338,12 +345,14 @@ main h2 {
 }
 
 .post p {
-	font-family: georgia, serif;
+	font-family: Georgia, serif;
 	margin-top: 1em;
 }
 
 .meta {
 	font-size: .8em;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-top: 1em;
 }
 
 .meta a {
@@ -389,11 +398,12 @@ article #post-title {
 	width: 100%;
 	max-width: 40em;
 	margin: 0 auto;
-	padding: 1em;
+	padding: 0 1em 1em;
 	font-family: Georgia, serif;
 	font-size: 1.1em;
 	line-height: 1.67;
 	background-color: #fff;
+	box-shadow: 0 0 .5em #5E5E5E;
 }
 
 /*
