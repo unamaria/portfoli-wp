@@ -169,6 +169,7 @@ body {
 
 p { margin: 0 0 1em 0; }
 
+
 /*
  *
  * Header
@@ -393,6 +394,19 @@ article #post-title {
 	letter-spacing: normal;
 	padding: 1em 0;
 	color: #00BEA4;
+}
+
+article h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+article ul, ol {
+	margin: 0 0 1em 1.5em;
+}
+
+article ul {
+	list-style-type: square;
 }
 
 .inner_article {

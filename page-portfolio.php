@@ -11,10 +11,11 @@
 	<main>
 		<section class="writing">
 			<div class="inner_main">
-				<h2>Writing</h2>
-				<?php query_posts("posts_per_page=10"); ?>
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
+				<h2>Portfolio</h2>
+
+				<?php $args = array( 'post_type' => 'projects', 'posts_per_page' => 10 ); ?>
+				<?php $loop = new WP_Query( $args ); ?>
+				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 				<div class="post" id="post-<?php the_ID(); ?>">
 
 					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
@@ -25,15 +26,13 @@
 						<?php the_excerpt(); ?>
 
 					</div>
-					<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
 				</div>
-				<?php endwhile; endif; ?>
-			</div> <!-- END .inner-main -->
+				<?php endwhile; ?>
+			</div>	
 		</section>
-
 	</main>
 
 <?php get_footer(); ?>
