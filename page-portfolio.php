@@ -18,11 +18,9 @@
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 				<div class="post" id="post-<?php the_ID(); ?>">
 
-					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-
-
 					<div class="entry">
-
+						<img src="<?php echo get_post_meta($post->ID, 'image_small', $single=true) ?>" border="0" target="blank"> 
+						<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>
 
 					</div>

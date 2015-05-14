@@ -298,6 +298,8 @@ main h2 {
 
 .archive a {
 	text-decoration: none;
+	color: inherit;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .archive a:hover {
