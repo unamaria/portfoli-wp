@@ -1,5 +1,8 @@
 <?php
 	
+    // Include post types file
+    include_once(TEMPLATEPATH . '/posttypes.php');
+
 	// // Add RSS links to <head> section
 	// automatic_feed_links();
 	
