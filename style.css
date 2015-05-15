@@ -475,6 +475,7 @@ footer ul {
 
 footer li {
 	display: inline-block;
+	padding-right: 1em;
 }
 
 footer a {
@@ -482,7 +483,15 @@ footer a {
 	color: #5E5E5E;
 }
 
-footer>a, footer small {
+footer .social a {
+	border-bottom: 2px solid #FEEA3A;
+}
+
+footer .social a:hover {
+	color: #FEEA3A;
+}
+
+footer ul, footer>a, footer small {
 	padding: 1em;
 }
 
