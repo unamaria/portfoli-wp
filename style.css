@@ -274,13 +274,13 @@ main h2 {
 }
 
 @media (min-width: 700px) and (max-width: 1199px) {
-	.post, .photo-card {
+	.post, .photo-card, .book-card {
 		width: 40%;
 	}
 }
 
 @media (min-width: 1200px) {
-	.post, .photo-card {
+	.post, .photo-card, .book-card {
 		width: 25%;
 	}
 
@@ -289,7 +289,7 @@ main h2 {
 	}
 }
 
-.post, .photo-card {
+.post, .photo-card, .book-card {
 	flex-grow: 1;
 }
 
@@ -367,12 +367,12 @@ main h2 {
 	color: #5d5d5d;
 }
 
-/* Photos */
-.photos {
+/* Photos and books */
+.photos, .books {
 	background-color: #2F2F2F;
 }
 
-.photos h2, .photos .archive a {
+.photos h2, .photos .archive a, .books h2, .books .archive a,.books h3, .books h4 {
 	color: #DDD;
 }
 
@@ -380,8 +380,29 @@ main h2 {
 	padding: 0 1em 1em;
 }
 
-.photo-card img {
+.photo-card, .book-card img {
 	vertical-align: middle;
+}
+
+.books .inner_main {
+	align-items: flex-end;
+} 
+
+.book-card {
+	margin-bottom: 2em;
+}
+
+.book-card img {
+	display: block;
+	margin: 0 auto;
+}
+
+.book-card figcaption {
+	border-top: .5em solid #DDD;
+}
+
+.book-card h3, h4 {
+	text-align: center;
 }
 
 /* Article */
