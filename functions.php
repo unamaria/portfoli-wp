@@ -52,4 +52,9 @@
     }
     add_filter('upload_mimes', 'custom_upload_mimes');
 
+    add_action( 'after_setup_theme', 'helloworld_theme_setup' );
+    function helloworld_theme_setup() {
+    add_image_size( 'project', 500 );
+    }
+
 ?>

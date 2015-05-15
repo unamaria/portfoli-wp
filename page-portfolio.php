@@ -20,8 +20,8 @@
 
 					<div class="entry">
 						<?php $image_path = wp_upload_dir(); ?>
-						<img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'image_small', $single=true) ?>"
-						sizes="<?php echo tevkori_get_sizes( the_ID(), 'medium' ); ?>"
+						<img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'image', $single=true) ?>"
+						sizes="<?php echo tevkori_get_sizes( the_ID(), '500' ); ?>"
 						> 
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>

@@ -8,7 +8,7 @@
 
 <?php get_header(); ?>
 
-	<main>
+	<main class="outputs">
 		<section class="writing">
 			<div class="inner_main">
 				<h2>Writing</h2>

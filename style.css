@@ -293,7 +293,7 @@ main h2 {
 	flex-grow: 1;
 }
 
-.archive {
+.outputs .archive {
 	margin: 1em;
 	width: 40%;
 	flex-grow: 1;
