@@ -169,6 +169,10 @@ body {
 
 p { margin: 0 0 1em 0; }
 
+img {
+	max-width: 100%;
+	height: inherit;
+}
 
 /*
  *
@@ -377,7 +381,6 @@ main h2 {
 }
 
 .photo-card img {
-	max-width: 100%;
 	vertical-align: middle;
 }
 

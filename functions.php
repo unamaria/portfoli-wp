@@ -34,8 +34,6 @@
  //    	));
  //    }
 
-    add_filter('upload_mimes', 'custom_upload_mimes');
-
     // Support menus natively
     if (function_exists('register_nav_menus')) {
         register_nav_menus(
@@ -52,5 +50,6 @@
         // call the modified list of extensions
         return $existing_mimes;
     }
+    add_filter('upload_mimes', 'custom_upload_mimes');
 
 ?>

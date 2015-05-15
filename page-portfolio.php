@@ -19,15 +19,20 @@
 				<div class="post" id="post-<?php the_ID(); ?>">
 
 					<div class="entry">
-						<img src="<?php echo get_post_meta($post->ID, 'image_small', $single=true) ?>" border="0" target="blank"> 
-						<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+						<?php $image_path = wp_upload_dir(); ?>
+						<img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'image_small', $single=true) ?>"
+						sizes="<?php echo tevkori_get_sizes( the_ID(), 'medium' ); ?>"
+						> 
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt(); ?>
 
 					</div>
-
+	
+					<p class="archive"><a href="<?php the_permalink(); ?>" title="Read more">Read more →</a></p>
 					<?php edit_post_link('Edit this entry.', '<p>', '</p>'); ?>
 
 				</div>
+
 				<?php endwhile; ?>
 			</div>	
 		</section>
