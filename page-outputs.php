@@ -37,18 +37,15 @@
 		<section class="photos">
 			<div class="inner_main">
 				<h2>Photos</h2>
-				<figure class="photo-card">
-					<picture>
-						<source
-					        media="(min-width: 750px)"
-					        srcset="<?php bloginfo('template_url'); ?>/images/IMG_2862-1600_large_2x.jpg 2x, <?php bloginfo('template_url'); ?>/images/IMG_2862-800_large_1x.jpg">
-					    <source
-					        media="(min-width: 500px)"
-					        srcset="<?php bloginfo('template_url'); ?>/images/IMG_2862-1000_medium_2x.jpg">  
-					    <img src="<?php bloginfo('template_url'); ?>/images/IMG_2862-500_medium_1x.jpg" alt="Davis mountains">
-					</picture>
-				</figure>
-				<figure class="photo-card">
+				<?php $args = array( 'post_type' => 'photos', 'posts_per_page' => 3 ); ?>
+				<?php $loop = new WP_Query( $args ); ?>
+				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
+					<figure class="photo-card">
+							<?php $image_path = wp_upload_dir(); ?>
+						    <img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'photo_500', $single=true) ?>" >
+					</figure>
+				<?php endwhile; ?>
+				<!-- <figure class="photo-card">
 					<picture>
 						<source
 					        media="(min-width: 750px)"
@@ -69,7 +66,7 @@
 					        srcset="<?php bloginfo('template_url'); ?>/images/IMG_3367-1000_medium_2x.jpg">  
 					    <img src="<?php bloginfo('template_url'); ?>/images/IMG_3367-500_medium_1x.jpg" alt="Davis mountains">
 					</picture>
-				</figure>
+				</figure> -->
 			<p class="archive"><a href="https://www.flickr.com/photos/unamaria/" title="Go see more photos on Flickr" target="_blank">View more on Flickr →</a></p>	
 			</div> <!-- END .inner_main -->
 		</section>

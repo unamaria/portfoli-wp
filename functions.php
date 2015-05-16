@@ -54,7 +54,8 @@
 
     add_action( 'after_setup_theme', 'helloworld_theme_setup' );
     function helloworld_theme_setup() {
-    add_image_size( 'project', 500 );
+        add_image_size( '500', 500 );
+        add_image_size( '1000', 1000 );
     }
 
 ?>

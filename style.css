@@ -166,10 +166,10 @@ body {
 
 p { margin: 0 0 1em 0; }
 
-img {
+img, textarea {
 	max-width: 100%;
-	height: inherit;
 }
+
 
 /*
  *
@@ -469,6 +469,10 @@ article ul {
 	line-height: 1.67;
 	background-color: #fff;
 	box-shadow: 0 0 .5em #5E5E5E;
+}
+
+.inner_article img {
+	height: inherit;
 }
 
 /*
