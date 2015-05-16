@@ -42,7 +42,12 @@
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
 					<figure class="photo-card">
 							<?php $image_path = wp_upload_dir(); ?>
-						    <img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'photo_500', $single=true) ?>" >
+						    <img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'photo_500', $single=true) ?>" 
+						    sizes="500w" 
+						    srcset="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'photo_1000', $single=true) ?> 1000w, 
+						    <?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'photo_500', $single=true) ?> 500w, 
+						    <?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'photo_300', $single=true) ?> 300w"
+						    alt="<?php the_title(); ?>" >
 					</figure>
 				<?php endwhile; ?>
 				<!-- <figure class="photo-card">
