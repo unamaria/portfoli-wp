@@ -201,8 +201,6 @@ header {
 }
 
 .header__logo img {
-	height: 50%;
-	max-height: 3em;
 	width: 50%;
 	max-width: 3em;
 }
