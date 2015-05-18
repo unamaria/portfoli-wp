@@ -60,7 +60,7 @@ header {
 	width: 100%;
 }
 
-.header__logo {
+.header_logo {
 	background-color: #FEEA3A;
 	width: 100%;
 	display: -webkit-box;
@@ -73,7 +73,7 @@ header {
 	        justify-content: center;
 }
 
-.header__logo h1 {
+.header_logo h1 {
 	color: #FFF;
 	letter-spacing: 0.5em;
 	text-transform: lowercase;
@@ -81,7 +81,7 @@ header {
 	line-height: .5;
 }
 
-.header__logo img {
+.header_logo img {
 	width: 50%;
 	max-width: 3em;
 }

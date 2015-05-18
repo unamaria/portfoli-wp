@@ -31,7 +31,7 @@
 	</title>
 	
 	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
-	
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -44,7 +44,7 @@
 <body <?php body_class(); ?>>
 
 	<header id="header">
-		<div class="header__logo">		
+		<div class="header_logo">		
 			<h1>Maria <img src="<?php bloginfo('template_url'); ?>/logo.svg" alt=""> Comas</h1>			
 		</div>
 		<nav>
