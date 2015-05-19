@@ -9,14 +9,14 @@
 <?php get_header(); ?>
 
 	<main>
-		<section class="writing">
+		<section class="light-section writing">
 			<div class="inner_main">
 				<h2>Portfolio</h2>
 
 				<?php $args = array( 'post_type' => 'projects', 'posts_per_page' => 10 ); ?>
 				<?php $loop = new WP_Query( $args ); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
-				<div class="post" id="post-<?php the_ID(); ?>">
+				<div class="card text-card project-card" id="post-<?php the_ID(); ?>">
 
 					<div class="entry">
 						<?php $image_path = wp_upload_dir(); ?>

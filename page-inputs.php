@@ -10,13 +10,13 @@
 
 	<main class="outputs">
 
-		<section class="books">
+		<section class="dark-section books">
 			<div class="inner_main">
 				<h2>Readings</h2>
 				<?php $args = array( 'post_type' => 'books', 'posts_per_page' => 10 ); ?>
 				<?php $loop = new WP_Query( $args ); ?>
 				<?php while ( $loop->have_posts() ) : $loop->the_post();?>
-					<figure class="book-card">
+					<figure class="card figure-card book-card">
 							<?php $image_path = wp_upload_dir(); ?>
 						    <img src="<?php echo $image_path['url']; ?>/<?php echo get_post_meta($post->ID, 'image', $single=true) ?>" >
 						<figcaption>
